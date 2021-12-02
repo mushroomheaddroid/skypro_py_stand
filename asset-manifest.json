@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/skypro_py_stand/static/css/main.ac593d0b.chunk.css",
-    "main.js": "/skypro_py_stand/static/js/main.978080e1.chunk.js",
-    "main.js.map": "/skypro_py_stand/static/js/main.978080e1.chunk.js.map",
+    "main.js": "/skypro_py_stand/static/js/main.ebaa7a95.chunk.js",
+    "main.js.map": "/skypro_py_stand/static/js/main.ebaa7a95.chunk.js.map",
     "runtime-main.js": "/skypro_py_stand/static/js/runtime-main.6e59646f.js",
     "runtime-main.js.map": "/skypro_py_stand/static/js/runtime-main.6e59646f.js.map",
     "static/js/2.2882714b.chunk.js": "/skypro_py_stand/static/js/2.2882714b.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.6e59646f.js",
     "static/js/2.2882714b.chunk.js",
     "static/css/main.ac593d0b.chunk.css",
-    "static/js/main.978080e1.chunk.js"
+    "static/js/main.ebaa7a95.chunk.js"
   ]
 }
