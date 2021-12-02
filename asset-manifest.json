@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/skypro_py_stand/static/css/main.ac593d0b.chunk.css",
-    "main.js": "/skypro_py_stand/static/js/main.ebaa7a95.chunk.js",
-    "main.js.map": "/skypro_py_stand/static/js/main.ebaa7a95.chunk.js.map",
+    "main.css": "/skypro_py_stand/static/css/main.03b0eb6e.chunk.css",
+    "main.js": "/skypro_py_stand/static/js/main.c2344ca7.chunk.js",
+    "main.js.map": "/skypro_py_stand/static/js/main.c2344ca7.chunk.js.map",
     "runtime-main.js": "/skypro_py_stand/static/js/runtime-main.6e59646f.js",
     "runtime-main.js.map": "/skypro_py_stand/static/js/runtime-main.6e59646f.js.map",
-    "static/js/2.2882714b.chunk.js": "/skypro_py_stand/static/js/2.2882714b.chunk.js",
-    "static/js/2.2882714b.chunk.js.map": "/skypro_py_stand/static/js/2.2882714b.chunk.js.map",
+    "static/js/2.215317ad.chunk.js": "/skypro_py_stand/static/js/2.215317ad.chunk.js",
+    "static/js/2.215317ad.chunk.js.map": "/skypro_py_stand/static/js/2.215317ad.chunk.js.map",
     "index.html": "/skypro_py_stand/index.html",
-    "static/css/main.ac593d0b.chunk.css.map": "/skypro_py_stand/static/css/main.ac593d0b.chunk.css.map",
-    "static/js/2.2882714b.chunk.js.LICENSE.txt": "/skypro_py_stand/static/js/2.2882714b.chunk.js.LICENSE.txt"
+    "static/css/main.03b0eb6e.chunk.css.map": "/skypro_py_stand/static/css/main.03b0eb6e.chunk.css.map",
+    "static/js/2.215317ad.chunk.js.LICENSE.txt": "/skypro_py_stand/static/js/2.215317ad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6e59646f.js",
-    "static/js/2.2882714b.chunk.js",
-    "static/css/main.ac593d0b.chunk.css",
-    "static/js/main.ebaa7a95.chunk.js"
+    "static/js/2.215317ad.chunk.js",
+    "static/css/main.03b0eb6e.chunk.css",
+    "static/js/main.c2344ca7.chunk.js"
   ]
 }
