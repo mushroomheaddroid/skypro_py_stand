@@ -4,10 +4,12 @@ import { useEffect, useState } from "react";
 import { getGenre } from "../../api/genres";
 import { getDirector } from "../../api/directors";
 import { getFavorites } from "../../api/user";
+import { getMovies } from "../../api/movies";
+import { tokenChecker } from "../../utils/token";
 import Header from "../../components/header/Header";
 import Loader from "../../components/loader/Loader";
 import MovieCardSet from "../../components/movieCardSet/MovieCardSet";
-import {getMovies} from "../../api/movies";
+import EmptyBlock from "../../components/emptyBlock/EmptyBlock";
 
 export const List = ({ title, type }) => {
   const { id } = useParams();
@@ -39,10 +41,11 @@ export const List = ({ title, type }) => {
         break;
 
       case "favorites":
-        (async () => {
-          const { data } = await getFavorites();
-          setMovies({loading: false, content: data});
-        })();
+        getFavorites()
+            .then(res => setMovies({loading: false, content: res.data}))
+            .catch(error => {
+              tokenChecker(error);
+            });
         break;
 
       default:
@@ -60,9 +63,13 @@ export const List = ({ title, type }) => {
       />
 
       <div className={styles.List__cards}>
-        {movies.loading && <Loader />}
-        {movies.content.length > 0 &&
-          <MovieCardSet movies={movies.content} />
+        {movies.loading ?
+          <Loader />
+          :
+          movies.content.length > 0 ?
+            <MovieCardSet movies={movies.content} />
+            :
+            <EmptyBlock />
         }
       </div>
     </div>

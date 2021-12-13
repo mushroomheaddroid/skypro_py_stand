@@ -8,6 +8,7 @@ export const Select = ({ options, selected, onChange }) => {
         <option disabled={true} value={null} selected={!selected}>Не выбрано</option>
         {options && options.length > 0 && options.map(option => (
           <option
+            key={option.id}
             selected={option.id === selected}
             value={option.id}
           >

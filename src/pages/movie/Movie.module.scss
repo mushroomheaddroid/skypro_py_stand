@@ -8,12 +8,18 @@
     max-width: 400px;
     text-align: justify;
     margin: auto;
+    @media only screen and (max-width: 768px) {
+      margin-top: 24px;
+    }
   }
   &__actions {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 16px;
+    @media only screen and (max-width: 768px) {
+      margin-top: 32px;
+    }
     button {
       margin-right: 12px;
       margin-bottom: 8px;
@@ -25,7 +31,7 @@
   &__wrapper {
     padding: 24px;
     @media only screen and (max-width: 768px) {
-      padding: 0 12px;
+      padding: 12px;
     }
   }
   &__selection {
@@ -36,20 +42,24 @@
 .Cover {
   position: relative;
   height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__layer {
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(9.51deg, #000000 22.82%, rgba(0, 0, 0, 0) 77.83%);
+    z-index: 20;
   }
   &__information {
     position: absolute;
     left: 24px;
     bottom: 24px;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 30;
   }
   &__title {
     font-weight: 500;
@@ -67,10 +77,33 @@
       margin-right: 8px;
     }
   }
-  img {
+  &__covers {
+    display: block;
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+  &__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+  &__image {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

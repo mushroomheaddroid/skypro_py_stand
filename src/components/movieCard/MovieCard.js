@@ -1,5 +1,5 @@
 import styles from "./MovieCard.module.scss";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const MovieCard = ({ id, img, title, rating, year }) => {
 
